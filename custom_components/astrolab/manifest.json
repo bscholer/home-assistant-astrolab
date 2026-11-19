@@ -1,0 +1,12 @@
+{
+  "domain": "astrolab",
+  "name": "Astrolab",
+  "codeowners": ["@bscholer"],
+  "config_flow": true,
+  "documentation": "https://github.com/bscholer/home-assistant-astrolab",
+  "integration_type": "service",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/bscholer/home-assistant-astrolab/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

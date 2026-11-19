@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Astrolab",
+        "description": "Where does Astrolab run? Use the address you open in your browser, for example http://astrolab.local:8000.",
+        "data": { "url": "Address" }
+      },
+      "reconfigure": {
+        "title": "Astrolab address",
+        "data": { "url": "Address" }
+      }
+    },
+    "error": { "cannot_connect": "Astrolab did not answer at that address. Check it and try again." },
+    "abort": {
+      "already_configured": "That Astrolab is already set up.",
+      "reconfigure_successful": "Updated."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "scheduler_state": { "name": "Scheduler" },
+      "scheduler_target": { "name": "Current target" },
+      "scheduler_reason": { "name": "Scheduler reason" },
+      "integration_total": { "name": "Total integration" },
+      "last_night": { "name": "Last night" },
+      "last_night_shot": { "name": "Last night shot" },
+      "last_night_kept": { "name": "Last night kept" },
+      "last_night_scrapped": { "name": "Last night scrapped" },
+      "last_night_frames": { "name": "Last night frames" },
+      "dusk": { "name": "Dusk" },
+      "dawn": { "name": "Dawn" },
+      "best_target": { "name": "Best target tonight" },
+      "targets_visible": { "name": "Targets visible tonight" },
+      "cloud_max": { "name": "Cloud cover (peak)" },
+      "cloud_mean": { "name": "Cloud cover (average)" },
+      "precipitation": { "name": "Rain tonight" },
+      "snowfall": { "name": "Snow tonight" },
+      "gpu_load": { "name": "GPU load" },
+      "gpu_temperature": { "name": "GPU temperature" },
+      "cache_disk_used": { "name": "Cache disk used" },
+      "jobs_queued": { "name": "Jobs queued" },
+      "jobs_running": { "name": "Jobs running" },
+      "jobs_failed_24h": { "name": "Jobs failed (24 h)" }
+    },
+    "binary_sensor": {
+      "weather_warning": { "name": "Weather warning" },
+      "pipeline_busy": { "name": "Processing" },
+      "scope_linked": { "name": "Telescope link" }
+    },
+    "switch": {
+      "auto_scheduler": { "name": "Auto scheduler" }
+    }
+  }
+}
