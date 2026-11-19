@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "Connect to Astrolab",
-        "description": "Where does Astrolab run? Use the address you open in your browser, for example http://astrolab.local:8000.",
+        "description": "Where does Astrolab run? Use the address you open in your browser (host and port, such as astrolab.local:8000).",
         "data": { "url": "Address" }
       },
       "reconfigure": {
